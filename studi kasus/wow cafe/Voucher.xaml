@@ -1,0 +1,27 @@
+﻿<Window x:Class="Cafe.Promo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Promo" Height="280" Width="626">
+    <Grid HorizontalAlignment="Left" Width="623" Margin="-7,0,0,30">
+        <ListBox x:Name="listBoxDaftarPromo" Margin="32,48,27,10" MouseDoubleClick="onlistBoxDaftarPromoClicked">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="350" />
+
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Text="{Binding diskon}" TextAlignment="Left" FontSize="14"/>
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="VOUCHER" HorizontalAlignment="Left" Margin="267,17,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="94"/>
+    </Grid>
+</Window>
+
+
